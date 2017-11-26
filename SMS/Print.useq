@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" automaticImage="JPEG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="sun.nio.fs.WindowsUserPrincipals.User" project="SMS" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" label="user" type="class" autoSize="false">    
+    <position height="99" width="78" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="63" width="74" x="5" y="101"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="21" width="74" x="5" y="536"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="com.project.millatinventory.controller.PrintController" project="SMS" 
+    file="/SMS/src/com/project/millatinventory/controller/PrintController.java" binary="false" label="printController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="162" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="161" x="83" y="122"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="63" width="161" x="83" y="194"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="161" x="83" y="440"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="63" width="161" x="83" y="515"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="com.project.millatinventory.serviceimpl.PrintServiceImpl" project="SMS" 
+    file="/SMS/src/com/project/millatinventory/serviceimpl/PrintServiceImpl.java" binary="false" 
+    label="printServiceImpl" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="452" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="171" x="248" y="215"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="63" width="171" x="248" y="263"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="171" x="248" y="381"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="63" width="171" x="248" y="419"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="com.project.millatinventory.daoimpl.PrintDaoImpl" project="SMS" 
+    file="/SMS/src/com/project/millatinventory/daoimpl/PrintDaoImpl.java" binary="false" label="printDaoImpl" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="606" y="0"/>    
+    <execution id="16">      
+      <position height="21" width="155" x="423" y="284"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="63" width="155" x="423" y="360"/>    
+    </execution>  
+  </object>  
+  <message id="3" 
+    operation="searchApplicant(java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest):java.lang.String" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="8" operation="getApplicantById(java.lang.String):com.project.millatinventory.model.DetailLookup" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="12" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="15" operation="getApplicantById(java.lang.String):com.project.millatinventory.model.DetailLookup" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="19" operation="viewApplicant(java.lang.String,org.springframework.ui.Model):java.lang.String" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="22" 
+    operation="getApplicants(com.project.millatinventory.model.DetailInsert):java.util.List&lt;DetailInsert&gt;" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>
+</sequence-diagram>

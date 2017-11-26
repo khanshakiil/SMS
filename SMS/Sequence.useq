@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.0" icons="true" automaticImage="JPEG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="sun.nio.fs.WindowsUserPrincipals.User" project="SMS" 
+    file="C:/Program Files/Java/jre1.8.0_121/lib/rt.jar" binary="true" label="user" type="class" autoSize="false">    
+    <position height="99" width="109" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="63" width="105" x="5" y="99"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="21" width="105" x="5" y="561"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="com.project.millatinventory.controller.LoginController" project="SMS" 
+    file="/SMS/src/com/project/millatinventory/controller/LoginController.java" binary="false" label="loginController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="240" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="161" x="114" y="120"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="63" width="161" x="114" y="187"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="95" width="161" x="114" y="430"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="161" x="114" y="483"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="63" width="161" x="114" y="540"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.project.millatinventory.serviceimpl.LoginServiceImpl" project="SMS" 
+    file="/SMS/src/com/project/millatinventory/serviceimpl/LoginServiceImpl.java" binary="false" 
+    label="loginServiceImpl" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="557" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="171" x="279" y="208"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="63" width="171" x="279" y="284"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="com.project.millatinventory.daoimpl.LoginDAOImpl" project="SMS" 
+    file="/SMS/src/com/project/millatinventory/daoimpl/LoginDAOImpl.java" binary="false" label="loginDAOImpl1" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="753" y="0"/>    
+    <execution id="18">      
+      <position height="21" width="155" x="454" y="305"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="137" width="155" x="454" y="409"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="LoginController()" asynchronous="true">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="8" 
+    operation="checkLogin(com.project.millatinventory.model.Users):com.project.millatinventory.model.Users" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="11" operation="setTasks(java.util.Map,com.project.millatinventory.model.Users):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="14" operation="User(java.lang.String,int,java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="17" 
+    operation="checkLogin(com.project.millatinventory.model.Users):com.project.millatinventory.model.Users" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="21" operation="LoginController()" asynchronous="false">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>
+</sequence-diagram>
